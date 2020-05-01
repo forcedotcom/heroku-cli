@@ -15,6 +15,12 @@
     "heroku-redis": "1.2.8",
     "heroku-run": "3.3.4",
     "heroku-spaces": "2.5.0",
-    "heroku-status": "3.0.2"
-  }
+    "heroku-status": "3.0.2",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
